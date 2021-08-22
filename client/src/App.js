@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 
+import { BrowswerRouter as Router, Route } from 'react-router-dom';
+
 const client = new ApolloClient({
   uri: 'http://localhost:3001/graphql'
 });
