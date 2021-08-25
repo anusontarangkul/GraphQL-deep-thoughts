@@ -21,7 +21,7 @@ const ThoughtList = ({ thoughts, title }) => {
                                 style={{ fontWeight: 700 }}
                                 className="text-light"
                             >
-                                {thought.username}
+                                {thought.username}{" "}
                             </Link>
                             {thought.username}
               thought on {thought.createdAt}
