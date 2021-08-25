@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useMutation } from '@apollo/react-hooks';
+import { ADD_THOUGHT } from '../../utils/mutations';
 
 const ThoughtList = ({ thoughts, title }) => {
+    const [addThought, { error }] = useMutation(ADD_THOUGHT);
     if (!thoughts.length) {
         return <h3>No Thoughts Yet</h3>;
     }
